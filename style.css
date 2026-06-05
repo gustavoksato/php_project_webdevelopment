@@ -1,0 +1,142 @@
+body {
+    background-color: rgb(130, 177, 80);
+}
+h1, h1, h3, .modalButton, .sidebar a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; /* Usa o peso "bold" (700) que baixamos */
+    font-size: large;
+    text-decoration: bisque;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align:center;
+}
+h2{
+    color: rgb(255, 255, 255);
+    text-align:center;
+    margin:30px;
+}
+h3{
+    color: rgb(28, 133, 42);
+    text-align:center;
+    margin:30px;
+    text-transform: uppercase;
+}
+
+
+.container1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 15px;
+    padding: 20px 0;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+}
+
+.menu {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+
+}
+.menu h3 { /* Ou qualquer que seja a classe do seu título do card */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1em; /* Ajuste o tamanho como preferir */
+}
+.menu .modalButton{
+    background-color: rgb(62, 164, 231);
+    color:white;
+    width: 80%;
+    font-size: 16px;
+    border: none;
+    padding-left: 10px;
+    margin: 15px 0;
+    box-shadow: 0 5px 10px rgb(130, 177, 80);
+    cursor: pointer;
+}
+
+.menu:hover {
+    transform: scale(1.03);
+}
+
+.menu .ImgStamp{
+    width: 270px;
+    height: 270px;
+    border-radius: 10px 10px 10px 10px;
+    object-fit: cover;
+}
+
+header{
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;   
+    left: 0;
+    width: 200px;
+    background-color: #dde0dab0;
+    height: 100%;
+    overflow: auto;
+    transition: .9s ease;
+    
+
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 1.1em;
+    color:cornflowerblue;
+}
+
+.sidebar a:hover {
+    background-color: burlywood;
+    color:rgb(255, 255, 255);
+}
+
+.menuprincipal{
+    margin-left: 200px;
+    padding: 1px 16px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-group label{
+    display:block;
+    margin-block: 10px;
+}
+
+.form-group select{
+    width:100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+hidden-modal-text {
+    display: none; 
+}
+
+/*BOTÕES*/
+.descricao-alga {
+    display: none; 
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc; 
+}

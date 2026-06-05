@@ -1,25 +1,15 @@
 # php_project_webdevelopment
 Sistema Web com PHP e MySQL Aplicação web desenvolvida em PHP com banco de dados MySQL, criada como atividade avaliativa do curso de Análise e Desenvolvimento de Sistemas da PUCPR. O projeto apresenta conteúdo educativo sobre os principais grupos de algas e implementa um sistema completo de autenticação e gerenciamento de usuários.
-/
-├── index.php             # Página inicial com galeria de algas
-├── about.php             # Página sobre o autor
-├── form.php              # Formulário de cadastro
-├── cadastro.php          # Processamento do cadastro (backend)
-├── login.php             # Tela de login
-├── processa_login.php    # Autenticação e criação de sessão
-├── perfil.php            # Página de perfil do usuário logado
-├── atualizar_perfil.php  # Processamento da edição de perfil
-├── deletar_conta.php     # Exclusão de conta do usuário
-├── conexao.php           # Configuração da conexão com o banco
-├── formAction.html       # Página de confirmação de envio (legado)
-├── css/
-│   └── style.css         # Estilo global da aplicação
-├── js/
-│   └── receiver.js       # Script de validação de formulário
-└── imagens/              # Imagens dos grupos de algas
+
+Página inicial com galeria interativa dos grupos de algas
+Cadastro de usuários com e-mail, senha (com hash) e alga favorita
+Login e autenticação com sessões PHP
+Perfil editável — o usuário pode atualizar nome e alga favorita
+Exclusão de conta com confirmação do usuário
+Página "Sobre" com informações do autor
+Validação de formulários no frontend (JavaScript) e backend (PHP)
 
 Segurança
-
 Senhas armazenadas com password_hash() (bcrypt) e verificadas com password_verify()
 Rotas protegidas verificam $_SESSION['id_usuario'] antes de executar qualquer operação
 Sessão destruída ao deletar a conta
